@@ -1,0 +1,18 @@
+<form (ngSubmit)="envioDatos()">
+  <label for="nombre">Nombre</label>
+  <input type="text" formControlName="nombre" required>
+
+  <label for="correo">Correo</label>
+  <input type="email" formControlName="correo" required>
+
+  <label for="password">Password</label>
+  <input type="password" formControlName="password" required>
+
+  <label for="tipo">Tipo de Usuario</label>
+  <select formControlName="tipo" required>
+    <option value="usuario">Usuario</option>
+    <option value="administrativo">Administrativo</option>
+  </select>
+
+  <button type="submit">Registrar</button>
+</form>
