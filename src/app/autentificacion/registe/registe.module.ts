@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from '../login/login.component';
-import { HomeComponent } from '../home/home/home.component';
+import { HomeComponent } from '../home/home.component';
 import { RegisterComponent } from '../register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { UsuarioDatosModule } from '../../Usuario/usuario-datos/usuario-datos.module';
+import { FormularioComponent } from '../../Usuario/formulario/formulario.component';
 
 
 
@@ -17,12 +19,14 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    BrowserModule
+    BrowserModule,
+    UsuarioDatosModule
   ],
   exports:[
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    UsuarioDatosModule
   ],
 })
 export class RegisteModule { }

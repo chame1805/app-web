@@ -1,0 +1,18 @@
+<form [formGroup]="informacion" (ngSubmit)="regresaDatos()">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" formControlName="nombre">
+  
+    <label for="telefono">Teléfono</label>
+    <input type="text" formControlName="telefono">
+  
+    <label for="curp">Curp</label>
+    <input type="text" formControlName="curp">
+  
+    <label for="correo">Correo</label>
+    <input type="email" formControlName="correo">
+  
+    <button type="submit">Enviar</button>
+  
+  </form>
+  

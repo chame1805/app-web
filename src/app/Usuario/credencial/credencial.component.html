@@ -1,0 +1,17 @@
+<div *ngIf="datos.length > 0">
+    <h3>Datos recibidos:</h3>
+    <ul>
+      <li *ngFor="let dato of datos">
+        <strong>ID:</strong> {{ dato.id }} <br>
+        <strong>Nombre:</strong> {{ dato.nombre }} <br>
+        <strong>Teléfono:</strong> {{ dato.telefono }} <br>
+        <strong>CURP:</strong> {{ dato.curp }} <br>
+        <strong>Correo:</strong> {{ dato.correo }} <br>
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngIf="datos.length === 0">
+
+  </div>
+  
